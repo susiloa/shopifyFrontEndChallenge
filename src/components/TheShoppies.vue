@@ -88,7 +88,7 @@
         methods: {
             getMovies() {
                 console.log("getting movies...");
-               let target = "http://www.omdbapi.com/?apikey=dce8b23b&type=movie&s=" + this.searchList + "&page=" + this.currentPage;
+               let target = "https://www.omdbapi.com/?apikey=dce8b23b&type=movie&s=" + this.searchList + "&page=" + this.currentPage;
                 axios.get(target)
                     .then((response) => {
                         if (response.status == 200) {
